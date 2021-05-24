@@ -764,10 +764,10 @@ main h2 {
 }
 
 /* Quitar comentario para ocultar scroll */
-/*
+
 ::-webkit-scrollbar {
     display: none;
-    }*/
+    }
 
 .contenedorvotos_div {
     border: 1px solid lightgray;
