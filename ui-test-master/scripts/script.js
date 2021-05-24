@@ -70,8 +70,12 @@ function CargarLocalStorage(){
       }
     ]
   }
-  localStorage.setItem('datosvotos', JSON.stringify(datosvotos));
-  CargarLocalStorage = function(){};
+  
+  var datos = localStorage.getItem("datosvotos");
+  if(datos == null){
+      localStorage.setItem('datosvotos', JSON.stringify(datosvotos));
+    }
+  //CargarLocalStorage = function(){};
 };
 
 CargarLocalStorage();
