@@ -71,14 +71,12 @@ function CargarLocalStorage(){
     ]
   }
   
-  var datos = localStorage.getItem("datosvotos");
-  if(datos == null){
-      localStorage.setItem('datosvotos', JSON.stringify(datosvotos));
-    }
-  //CargarLocalStorage = function(){};
+  localStorage.setItem('datosvotos', JSON.stringify(datosvotos));
+  CargarLocalStorage = function(){};
 };
 
 CargarLocalStorage();
+
 
 function EnviarVoto(indice, boton){
   if(boton.innerHTML == "Vote Again"){
